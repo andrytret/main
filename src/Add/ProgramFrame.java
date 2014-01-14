@@ -194,12 +194,19 @@ public class ProgramFrame {
 				String item3 = (String) comboBox_3.getSelectedItem();
 				String item4 = (String) comboBox_4.getSelectedItem();
 				String item5 = (String) comboBox_5.getSelectedItem();
-
-				returnLabelSP.setText(item1);
-				returnLabelS.setText(item2);
-				returnLabelAt.setText(item3);
-				returnLabelNt.setText(item4);
-				returnLabelSKL.setText(item5);
+		// TODO Эту проверку нада делать тут 		
+				String znachComboBox1 = (String) CheckItem.checkKeys(item1, items);
+				String znachComboBox2 = (String) CheckItem.checkKeys(item2, items);
+				String znachComboBox3 = (String) CheckItem.checkKeys(item3, items);
+				String znachComboBox4 = (String) CheckItem.checkKeys(item4, items);
+				String znachComboBox5 = (String) CheckItem.checkKeys(item5, items);
+				
+				
+				returnLabelSP.setText(znachComboBox1);
+				returnLabelS.setText(znachComboBox2);
+				returnLabelAt.setText(znachComboBox3);
+				returnLabelNt.setText(znachComboBox4);
+				returnLabelSKL.setText(znachComboBox5);
 
 				textArea.setText("Работаю");
 
