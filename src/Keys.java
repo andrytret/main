@@ -4,10 +4,10 @@ import java.awt.GraphicsEnvironment;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 
-import javax.swing.JButton;
+
 
 public class Keys {
-	public void f1() {
+	public void keyf1() {
 		GraphicsEnvironment env = GraphicsEnvironment
 				.getLocalGraphicsEnvironment();
 		GraphicsDevice screen = env.getDefaultScreenDevice();
@@ -18,7 +18,7 @@ public class Keys {
 		robot.keyPress(KeyEvent.VK_F1);
 	}
 
-	public void f2() {
+	public void keyf2() {
 		GraphicsEnvironment env = GraphicsEnvironment
 				.getLocalGraphicsEnvironment();
 		GraphicsDevice screen = env.getDefaultScreenDevice();
@@ -29,7 +29,7 @@ public class Keys {
 		robot.keyPress(KeyEvent.VK_F2);
 	}
 
-	public void f3() {
+	public void keyf3() {
 		GraphicsEnvironment env = GraphicsEnvironment
 				.getLocalGraphicsEnvironment();
 		GraphicsDevice screen = env.getDefaultScreenDevice();
@@ -40,7 +40,7 @@ public class Keys {
 		robot.keyPress(KeyEvent.VK_F3);
 	}
 
-	public void f4() {
+	public void keyf4() {
 		GraphicsEnvironment env = GraphicsEnvironment
 				.getLocalGraphicsEnvironment();
 		GraphicsDevice screen = env.getDefaultScreenDevice();
@@ -51,7 +51,7 @@ public class Keys {
 		robot.keyPress(KeyEvent.VK_F4);
 	}
 
-	public void f5() {
+	public void keyf5() {
 		GraphicsEnvironment env = GraphicsEnvironment
 				.getLocalGraphicsEnvironment();
 		GraphicsDevice screen = env.getDefaultScreenDevice();
@@ -62,7 +62,7 @@ public class Keys {
 		robot.keyPress(KeyEvent.VK_F5);
 	}
 
-	public void f6() {
+	public void keyf6() {
 		GraphicsEnvironment env = GraphicsEnvironment
 				.getLocalGraphicsEnvironment();
 		GraphicsDevice screen = env.getDefaultScreenDevice();
@@ -73,7 +73,7 @@ public class Keys {
 		robot.keyPress(KeyEvent.VK_F6);
 	}
 
-	public void f7() {
+	public void keyf7() {
 		GraphicsEnvironment env = GraphicsEnvironment
 				.getLocalGraphicsEnvironment();
 		GraphicsDevice screen = env.getDefaultScreenDevice();
