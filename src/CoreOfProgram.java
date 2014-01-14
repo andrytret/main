@@ -34,17 +34,16 @@ import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import javax.swing.*;
 
-import calc.ProgramFrame;
+//import calc.ProgramFrame;
 
 public class CoreOfProgram {
 
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		String znachComboBox1 = (String) ProgramFrame.main("123");
-	
+	public static void main1(String[] args) {
+		// TODO tut esche ne delal 
+		// c camogo nach nada zadat znach iz ProgramFrame i otkrit sam fram
 		GraphicsEnvironment env = GraphicsEnvironment
 				.getLocalGraphicsEnvironment();
 		GraphicsDevice screen = env.getDefaultScreenDevice();
@@ -53,38 +52,13 @@ public class CoreOfProgram {
 			robot = new Robot(screen);
 		} catch (AWTException ex) {
 		}
-		int i=0;
-		while(i!=10 ) {
-			i=i+1;
+		int i = 0;
+		while (i != 10) {
+			i = i + 1;
 			robot.delay(1000);
-			/*if (znach1.equals("F1")) {
-				System.out.println("F1");
-			} else if (znach1.equals("F2")) {
-				System.out.println("F2");
-			} else if (znach1.equals("F3")) {
-				System.out.println("F3");
-			} else if (znach1.equals("F4")) {
-				System.out.println("F4");
-			} else if (znach1.equals("F5")) {
-				System.out.println("F5");
-			} else if (znach1.equals("F6")) {
-				System.out.println("F6");
-			} else if (znach1.equals("F7")) {
-				System.out.println("F7");
-			} else if (znach1.equals("-")) {
-				System.out.println("-");
-			}*/
-			System.out.println("123");
-	
-	
-			/*
-			 * String d1 = null; textArea.setText(textArea.getText()); d1 =
-			 * textArea.getText();
-			 */
-			// znach1.equals("-") &&
-			// Нажатие кнопки старт
-			// конец описания элементов интерфейса
-	
-	}
-	}}
 
+			System.out.println("123");
+
+		}
+	}
+}

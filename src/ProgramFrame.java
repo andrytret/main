@@ -206,7 +206,7 @@ public class ProgramFrame {
 		String item3 = (String)ReturnLabelAt.getText() ;
 		String item4 = (String)ReturnLabelNt.getText() ;
 		String item5 = (String)ReturnLabelSKL.getText() ;
-		//Значения для вывода в др класс
+		//TOD Znach peremennih nije nada ispolzovat v dr klasse return probival ne prokatilo
 		String znachComboBox1 = (String) CheckItem.checkKeys(item1, items);
 		String znachComboBox2 = (String) CheckItem.checkKeys(item2, items);
 		String znachComboBox3 = (String) CheckItem.checkKeys(item3, items);
