@@ -4,7 +4,7 @@ import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.Robot;
 
-import Add.CheckItem;
+
 import Add.ProgramFrame;
 
 //import calc.ProgramFrame;
@@ -39,16 +39,18 @@ public class CoreOfProgram {
 					// ne prokatilo
 					
 					String znachTextArea1 = window.textArea.getText();
-
 				System.out.println(item1);
 				System.out.println(item2);
 				System.out.println(item3);
 				System.out.println(item4);
 				System.out.println(item5);
 				System.out.println(znachTextArea1);
+				
+				while (znachTextArea1.equals("Готов к Работе")|| znachTextArea1.equals("Работаю") ){ 
 				GraphicsEnvironment env = GraphicsEnvironment.getLocalGraphicsEnvironment();
 				GraphicsDevice screen = env.getDefaultScreenDevice();
 				Robot robot = null;
+				
 				try {
 					robot = new Robot(screen);
 				} catch (AWTException ex) {
@@ -59,9 +61,10 @@ public class CoreOfProgram {
 					robot.delay(1000);
 
 					System.out.println("123");
-
-				}					
-				}
-			});
-	}
-}
+				
+					}		
+				if (i==10){break;}}	}
+			});	
+	
+			
+}}
