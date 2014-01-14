@@ -4,6 +4,8 @@ import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.Robot;
 
+import com.sun.xml.internal.messaging.saaj.util.LogDomainConstants;
+
 
 import Add.ProgramFrame;
 
@@ -46,15 +48,17 @@ public class CoreOfProgram {
 				System.out.println(item5);
 				System.out.println(znachTextArea1);
 				
-				while (znachTextArea1.equals("Готов к Работе")|| znachTextArea1.equals("Работаю") ){ 
-				GraphicsEnvironment env = GraphicsEnvironment.getLocalGraphicsEnvironment();
-				GraphicsDevice screen = env.getDefaultScreenDevice();
-				Robot robot = null;
-				
-				try {
-					robot = new Robot(screen);
-				} catch (AWTException ex) {
-				}
+				while (znachTextArea1.equals("Готов к Работе") || znachTextArea1.equals("Работаю")) {
+					GraphicsEnvironment env = GraphicsEnvironment.getLocalGraphicsEnvironment();
+					GraphicsDevice screen = env.getDefaultScreenDevice();
+					Robot robot = null;
+
+					try {
+						robot = new Robot(screen);
+					} catch (AWTException ex) {
+						System.out.println(ex);
+					}
+					
 				int i = 0;
 				while (i != 10) {
 					i = i + 1;
