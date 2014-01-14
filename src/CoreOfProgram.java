@@ -34,16 +34,32 @@ import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import javax.swing.*;
 
-//import calc.ProgramFrame;
+import Add.ProgramFrame;
+
+
 
 public class CoreOfProgram {
 
 	/**
 	 * @param args
 	 */
-	public static void main1(String[] args) {
+	public static void main(String[] args) {
 		// TODO tut esche ne delal 
 		// c camogo nach nada zadat znach iz ProgramFrame i otkrit sam fram
+		
+		
+		/*	EventQueue.invokeLater(new Runnable() {
+				public void run() {
+					try {
+						ProgramFrame window = new ProgramFrame();
+						window.main.getClass();
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+				}
+			});
+*/
+		
 		GraphicsEnvironment env = GraphicsEnvironment
 				.getLocalGraphicsEnvironment();
 		GraphicsDevice screen = env.getDefaultScreenDevice();

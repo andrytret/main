@@ -1,3 +1,4 @@
+package Add;
 public class CheckItem {
 
 	public static String checkKeys(final String keyName, final String[] keyNames) {

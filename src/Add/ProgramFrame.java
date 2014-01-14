@@ -1,3 +1,5 @@
+package Add;
+
 
 
 import java.awt.EventQueue;
@@ -16,9 +18,6 @@ import javax.swing.*;
 
 public class ProgramFrame {
 
-	
-
-	
 
 	/**
 	 * Launch the application.
