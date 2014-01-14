@@ -1,24 +1,19 @@
-
-
-import java.awt.EventQueue;
-import javax.swing.JFrame;
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JList;
-import javax.swing.JTextField;
 import java.awt.Color;
-import javax.swing.border.BevelBorder;
-import javax.swing.JComboBox;
-import java.awt.*;
+import java.awt.EventQueue;
+import java.awt.SystemColor;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.*;
+
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+import javax.swing.border.BevelBorder;
 
 public class ProgramFrame {
-
-	
-
-	
 
 	/**
 	 * Launch the application.
@@ -36,9 +31,11 @@ public class ProgramFrame {
 		});
 
 	}
-// Конец метода мэин
+
+	// Конец метода мэин
 	public static Object main;
 	private JFrame frame;
+
 	public ProgramFrame() {
 		initialize();
 	}
@@ -53,7 +50,8 @@ public class ProgramFrame {
 
 	/**
 	 * Initialize the contents of the frame.
-	 * @return 
+	 * 
+	 * @return
 	 */
 	public void initialize() {
 		textField.setColumns(10);
@@ -97,8 +95,7 @@ public class ProgramFrame {
 		JList<?> list = new JList<Object>();
 		list.setBounds(80, 88, 53, -15);
 		frame.getContentPane().add(list);
-		list.setBorder(new BevelBorder(BevelBorder.RAISED, null, null, null,
-				null));
+		list.setBorder(new BevelBorder(BevelBorder.RAISED, null, null, null, null));
 		list.setToolTipText("");
 		list.setBackground(Color.WHITE);
 		final JComboBox<?> comboBox_1 = new JComboBox<Object>(items);
@@ -133,46 +130,46 @@ public class ProgramFrame {
 		JLabel Podpis1 = new JLabel("Sp");
 		Podpis1.setBounds(10, 220, 48, 14);
 		frame.getContentPane().add(Podpis1);
-		
+
 		JLabel Podpis2 = new JLabel("S");
 		Podpis2.setBounds(10, 245, 48, 14);
 		frame.getContentPane().add(Podpis2);
-		
+
 		JLabel Podpis3 = new JLabel("At");
 		Podpis3.setBounds(10, 270, 48, 14);
 		frame.getContentPane().add(Podpis3);
-		
+
 		JLabel Podpis4 = new JLabel("NT");
 		Podpis4.setBounds(10, 295, 48, 14);
 		frame.getContentPane().add(Podpis4);
-		
+
 		JLabel Podpis5 = new JLabel("Skl");
 		Podpis5.setBounds(10, 320, 48, 14);
 		frame.getContentPane().add(Podpis5);
-		
+
 		final JLabel ReturnLabelSP = new JLabel("");
 		ReturnLabelSP.setBounds(76, 220, 46, 14);
 		frame.getContentPane().add(ReturnLabelSP);
-		
+
 		final JLabel ReturnLabelS = new JLabel("");
 		ReturnLabelS.setBounds(76, 245, 46, 14);
 		frame.getContentPane().add(ReturnLabelS);
-		
+
 		final JLabel ReturnLabelAt = new JLabel("");
 		ReturnLabelAt.setBounds(76, 270, 46, 14);
 		frame.getContentPane().add(ReturnLabelAt);
-		
+
 		final JLabel ReturnLabelNt = new JLabel("");
 		ReturnLabelNt.setBounds(76, 295, 46, 14);
 		frame.getContentPane().add(ReturnLabelNt);
-		
+
 		final JLabel ReturnLabelSKL = new JLabel("");
 		ReturnLabelSKL.setBounds(76, 320, 46, 14);
 		frame.getContentPane().add(ReturnLabelSKL);
 
 		textArea.setText("Готов к Работе");
-		
-		//нажатие кнопки стоп
+
+		// нажатие кнопки стоп
 		btnStop.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -194,28 +191,25 @@ public class ProgramFrame {
 				ReturnLabelAt.setText(item3);
 				ReturnLabelNt.setText(item4);
 				ReturnLabelSKL.setText(item5);
-						
-				
+
 				textArea.setText("Работаю");
-				
+
 			}
 		});
 
-		String item1 = (String)ReturnLabelSP.getText() ;
-		String item2 = (String)ReturnLabelS.getText() ;
-		String item3 = (String)ReturnLabelAt.getText() ;
-		String item4 = (String)ReturnLabelNt.getText() ;
-		String item5 = (String)ReturnLabelSKL.getText() ;
-		//TOD Znach peremennih nije nada ispolzovat v dr klasse return probival ne prokatilo
+		String item1 = (String) ReturnLabelSP.getText();
+		String item2 = (String) ReturnLabelS.getText();
+		String item3 = (String) ReturnLabelAt.getText();
+		String item4 = (String) ReturnLabelNt.getText();
+		String item5 = (String) ReturnLabelSKL.getText();
+		// TOD Znach peremennih nije nada ispolzovat v dr klasse return probival
+		// ne prokatilo
 		String znachComboBox1 = (String) CheckItem.checkKeys(item1, items);
 		String znachComboBox2 = (String) CheckItem.checkKeys(item2, items);
 		String znachComboBox3 = (String) CheckItem.checkKeys(item3, items);
 		String znachComboBox4 = (String) CheckItem.checkKeys(item4, items);
 		String znachComboBox5 = (String) CheckItem.checkKeys(item5, items);
 		String znachTextArea1 = textArea.getText();
-		
-	
-}
-}
 
-
+	}
+}
