@@ -36,30 +36,29 @@ import javax.swing.*;
 
 import Add.ProgramFrame;
 
-
-
 public class CoreOfProgram {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO tut esche ne delal 
+		// TODO tut esche ne delal
+
 		// c camogo nach nada zadat znach iz ProgramFrame i otkrit sam fram
+
+		/*
+		 * EventQueue.invokeLater(new Runnable() { public void run() { try {
+		 * ProgramFrame window = new ProgramFrame(); window.main.getClass(); }
+		 * catch (Exception e) { e.printStackTrace(); } } });
+		*/
 		
-		
-		/*	EventQueue.invokeLater(new Runnable() {
-				public void run() {
-					try {
-						ProgramFrame window = new ProgramFrame();
-						window.main.getClass();
-					} catch (Exception e) {
-						e.printStackTrace();
-					}
-				}
-			});
-*/
-		
+		/*
+		 * public static void main(String[] args) { EventQueue.invokeLater(new
+		 * Runnable() { public void run() { try { ProgramFrame window = new
+		 * ProgramFrame(); window.frame.setVisible(true); } catch (Exception e)
+		 * { e.printStackTrace();
+		 */
+
 		GraphicsEnvironment env = GraphicsEnvironment
 				.getLocalGraphicsEnvironment();
 		GraphicsDevice screen = env.getDefaultScreenDevice();
