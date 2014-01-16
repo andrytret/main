@@ -65,7 +65,12 @@ public class CoreOfProgram {
 					robot.delay(1000);
 
 					System.out.println("123");
-				
+					System.out.println(item1);
+					System.out.println(item2);
+					System.out.println(item3);
+					System.out.println(item4);
+					System.out.println(item5);
+					System.out.println(znachTextArea1);
 					}		
 				if (i==10){break;}}	}
 			});	
